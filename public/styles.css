@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+}
+
+.input01 {
+    color: rgba(247, 245, 243, 0.856);
+}
+
+.input02 {
+    color: rgba(247, 245, 243, 0.856);
+}
+
+.input01::placeholder {
+    color: aliceblue;
+}
+
+.input02::placeholder {
+    color: aliceblue;
+}
+
+#label01 {
+    position: absolute;
+    top: 10px;
+    transition: 0.12s;
+    color: rgb(164, 167, 167);
+}
+
+#labelSenha {
+    position: absolute;
+    top: 10px;
+    transition: 0.12s;
+    color: rgb(164, 167, 167);
+}
+
+.input01:focus + #label01, .input01:not(:placeholder-shown) + #label01 {
+    color: rgb(252, 101, 0);
+    top: -7px;
+    font-size: 12px;
+}
+
+.input02:focus + #labelSenha, .input02:not(:placeholder-shown) + #labelSenha {
+    color: rgb(252, 101, 0);
+    top: -7px;
+    font-size: 12px;
+}
+
+#div03 {
+    width: 23%;
+    margin: 0 auto;
+}
+
+#div05 {
+    background-color: rgb(142, 145, 145);
+}
+
+#divSenha {
+    background-color: rgb(142, 145, 145);
+}
+
+.input01:focus ~ #div05,
+.input01:not(:placeholder-shown) ~ #div05 {
+    background-color: rgb(252, 101, 0);
+}
+
+input02:focus ~ #divSenha,
+.input02:not(:placeholder-shown) ~ #divSenha {
+    background-color: rgb(252, 101, 0);
+}
+
+#div06 {
+    width: 300px;
+    height: 40px;
+    position: relative;
+    margin: 0 auto;
+    top: 20px;
+    text-align: center;
+    border: 2px solid rgb(123, 124, 124);
+    border-radius: 25px;
+    color: rgba(241, 241, 241, 0.377);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: transparent;
+    transition: 3s;
+}
+
+#div04:has(.input01:not(:placeholder-shown)) ~ #div06 {
+    color: rgb(252, 101, 0);
+    cursor: pointer;
+}
+
+#senhaContainer {
+    display: none;
+    color: rgb(252, 101, 0);
+    cursor: pointer;
+}
+
+#div07 {
+    color: rgb(252, 101, 0);
+    width: 400px;
+    height: 30px;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    top: 30px;
+    position: relative;
+}

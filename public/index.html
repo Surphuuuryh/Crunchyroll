@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <div id="div01" style="background-color: rgb(10, 10, 10); width: 1920px; height: 925px;">
+        <div id="div02" style="background-color: rgba(37, 37, 37, 0.863); width: 1912px; height: 75px;">
+            <div id="div03">
+                <img src="./svgs/crunchyroll.svg" alt="Crunchyroll">
+            </div>
+        </div>
+        <h1 id="h101" style="color: rgb(252, 253, 253); text-align: center;padding-top: 150px;">
+            Login
+        </h1>
+        <form id="loginForm">
+            <div id="div04" class="emailContainer" style="background-color: transparent; width: 416px; height: 38px; margin: 0 auto; position: relative;">
+                <input id="email" class="input01" placeholder=" " required style="width: 416px; height: 34px; font-size: larger; background: transparent; border: none; outline: none;">
+                <label id="label01" for="email" style="width: 416px; pointer-events: none;">
+                    E-mail ou Número de Telefone.
+                </label>
+                <div id="div05" class="divinput" style="width: 416px; height: 2px;">
+                </div>
+            </div>
+            <div id="senhaContainer" class="emailContainer" style="display: none; background-color: transparent; width: 416px; height: 38px; margin: 0 auto; position: relative;">
+                <input id="senha" class="input02" type="password" placeholder=" " style="width: 416px; height: 34px; font-size: larger; background: transparent; border: none; outline: none;">
+                <label id="labelSenha" for="senha" style="width: 416px; pointer-events: none;">
+                    Senha
+                </label>
+                <div id="divSenha" class="divinput" style="width: 416px; height: 2px;"></div>
+            </div>
+            <button id="div06" class="divbutton" type="submit">
+                PRÓXIMO
+            </button>
+        </form>
+        <div id="div07" class="divtext">
+            ESQUECEU A SENHA? <p style="color: rgba(241, 241, 241, 0.747);">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</p> CRIAR CONTA
+        </div>
+    </div>
+    <script type="module" src="/src/script/index.ts"></script>
+</body>
+</html>
