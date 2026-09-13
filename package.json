@@ -3,6 +3,9 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "start": "xdg-open http://localhost:3000 & bun run src/main.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
